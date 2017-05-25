@@ -1,0 +1,26 @@
+{
+  "name": "node-version",
+  "version": "1.1.0",
+  "description": "NodeJS example fo CI/CD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test/test.js"
+  },
+  "author": "Jainish Shah",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7",
+    "assert": "latest",
+    "semver-regex": "latest"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "npm-version"
+  ],
+  "directories": {
+    "test": "test"
+  }
+}
