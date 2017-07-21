@@ -1,6 +1,6 @@
 {
   "name": "node-version",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "NodeJS example fo CI/CD",
   "main": "index.js",
   "scripts": {
