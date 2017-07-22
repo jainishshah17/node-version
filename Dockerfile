@@ -1,4 +1,4 @@
-FROM node:boron
+FROM jfrog.local:5001/node:boron
 
 # Create app directory
 RUN mkdir -p /usr/src/app
