@@ -1,7 +1,6 @@
 {
   "name": "node-version",
   "version": "2.0.0",
-  "private": true,
   "description": "NodeJS example fo CI/CD",
   "author": "Jainish Shah",
   "license": "UNLICENSED",
