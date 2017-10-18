@@ -1,9 +1,18 @@
 ## Example Pipeline for CI/CD using Jenkins and Artifactory
 
 #### Command to test npm package:
-Install dependencies: `npm install` <Br>
-Start node Server: `npm start` <Br>
-Access Application on: [http://localhost:3000](http://localhost:3000)
+* Set npm command line client to work with Artifactory.
+create `.npmrc` file and paste following content to it:
+```
+registry = https://jfrogtraining.jfrog.io/jfrogtraining/api/npm/npmjs-remote/
+_auth = $ARTIFACTORY_USER:$ARTIFACTORY_API_KEY
+email = youremail@email.com
+always-auth = true
+
+```
+* Install dependencies: `npm install` <Br>
+* Start node Server: `npm start` <Br>
+* Access Application on: [http://localhost:3000](http://localhost:3000)
 
 #### Command to build docker image and push it to Artifactory:
 Build docker image: ```docker build -t $DOCKER_REGISTRY/node-version .```<Br>
