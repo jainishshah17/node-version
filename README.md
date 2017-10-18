@@ -1,10 +1,10 @@
 ## Example Pipeline for CI/CD using Jenkins and Artifactory
 
 #### Command to test npm package:
-* Set npm command line client to work with Artifactory.
+* Set npm command line client to work with [Artifactory Npm Registry](https://www.jfrog.com/confluence/display/RTF/Npm+Registry).
 create `.npmrc` file and paste following content to it:
 ```
-registry = https://jfrogtraining.jfrog.io/jfrogtraining/api/npm/npmjs-remote/
+registry = https://$ARTIFACTORY_URL/api/npm/$ARTIFACTORY_NPM_REPO_NAME/
 _auth = $ARTIFACTORY_USER:$ARTIFACTORY_API_KEY
 email = youremail@email.com
 always-auth = true
