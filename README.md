@@ -5,7 +5,7 @@
 create `.npmrc` file and paste following content to it:
 ```
 registry = https://$ARTIFACTORY_URL/api/npm/$ARTIFACTORY_NPM_REPO_NAME/
-_auth = $ARTIFACTORY_USER:$ARTIFACTORY_API_KEY
+_auth = $ARTIFACTORY_USER:$ARTIFACTORY_PASSWORD
 email = youremail@email.com
 always-auth = true
 
