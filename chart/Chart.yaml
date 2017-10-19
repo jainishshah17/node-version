@@ -1,0 +1,14 @@
+name: node-version
+description: A basic Node Application with HTTP server
+version: 0.1.0
+keywords:
+  - http
+  - node
+  - web
+  - npm
+home: https://github.com/jainishshah17/node-version
+sources:
+  - https://hub.docker.com/_/nginx/
+maintainers:
+  - name: jainishshah17
+    email: jainishshah@yahoo.com
