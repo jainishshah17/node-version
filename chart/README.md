@@ -55,7 +55,6 @@ The following tables lists the configurable parameters of the node-version chart
 | `image.secretName`                 | Credentials of Art docker repo      | `regsecret`                                               |
 | `service.type`                     | Kubernetes Service type             | `LoadBalancer`                                            |
 | `service.port`                     | Port to expose                      | `3000`                                                    |
-|--------------------------------------------------------------------------------------------------------------------------------------|
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
