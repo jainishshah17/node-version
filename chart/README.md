@@ -50,7 +50,7 @@ The following tables lists the configurable parameters of the node-version chart
 |           Parameter                |             Description             |                        Default                            |
 |------------------------------------|-------------------------------------|-----------------------------------------------------------|
 | `image.repository`                 | Node-version image                  | `$ART_DOCKER_REPO/node-version:{tag}`                     |
-| `image.pullPolicy`                 | Image pull policy                   | `IfNotPresent`                                            |
+| `image.pullPolicy`                 | Image pull policy                   | `Always`                                            |
 | `image.tag`                        | Tag of docker image                 | `latest`                                                  |
 | `image.secretName`                 | Credentials of Art docker repo      | `regsecret`                                               |
 | `service.type`                     | Kubernetes Service type             | `LoadBalancer`                                            |

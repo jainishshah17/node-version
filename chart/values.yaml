@@ -9,7 +9,7 @@ image:
   repository: jfrogtraining-docker-dev.jfrog.io/node-version
   secretName: regsecret
   tag: latest
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 service:
   annotations: {}
