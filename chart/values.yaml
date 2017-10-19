@@ -6,7 +6,7 @@ replicaCount: 1
 restartPolicy: Never
 
 image:
-  repository: jainishshah17/node-version
+  repository: jfrogtraining-docker-dev.jfrog.io/node-version
   secretName: regsecret
   tag: latest
   pullPolicy: IfNotPresent
