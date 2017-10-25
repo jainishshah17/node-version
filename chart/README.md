@@ -50,11 +50,13 @@ The following tables lists the configurable parameters of the node-version chart
 |           Parameter                |             Description             |                        Default                            |
 |------------------------------------|-------------------------------------|-----------------------------------------------------------|
 | `image.repository`                 | Node-version image                  | `$ART_DOCKER_REPO/node-version:{tag}`                     |
-| `image.pullPolicy`                 | Image pull policy                   | `Always`                                            |
+| `image.pullPolicy`                 | Image pull policy                   | `Always`                                                  |
 | `image.tag`                        | Tag of docker image                 | `latest`                                                  |
-| `image.secretName`                 | Credentials of Art docker repo      | `regsecret`                                               |
 | `service.type`                     | Kubernetes Service type             | `LoadBalancer`                                            |
 | `service.port`                     | Port to expose                      | `3000`                                                    |
+| `imageCredentials.registry`        | Artifactory docker registry         | `docker.artifactory`                                      |
+| `imageCredentials.username`        | Artifactory username                | `admin`                                                   |
+| `imageCredentials.password`        | Artifactory password                | `password`                                                |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
