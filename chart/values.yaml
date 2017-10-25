@@ -7,9 +7,13 @@ restartPolicy: Never
 
 image:
   repository: jfrogtraining-docker-dev.jfrog.io/node-version
-  secretName: regsecret
   tag: latest
   pullPolicy: Always
+
+imageCredentials:
+  registry: docker.artifactory
+  username: admin
+  password: password
 
 service:
   annotations: {}
