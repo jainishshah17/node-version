@@ -24,6 +24,13 @@
 
 #### Steps to create Jenkins Pipeline to build and push docker image to Artifactory:
 
+<b>Note:</b> List of required Jenkins plugins
+*   [Artifactory Plugin](https://wiki.jenkins.io/display/JENKINS/Artifactory+Plugin)   
+*   [Docker Pipeline Plugin](https://wiki.jenkins.io/display/JENKINS/Docker+Pipeline+Plugin)   
+*   [GitHub plugin](https://plugins.jenkins.io/git)   
+*   [Pipeline Github Plugin](https://wiki.jenkins.io/display/JENKINS/Pipeline+Github+Plugin)   
+*   [Pipeline Plugin](https://wiki.jenkins.io/display/JENKINS/Pipeline+Plugin)   
+
 1.  On the Jenkins front page, click on Credentials -> System -> Global credentials -> Add Credentials 
 2.  Add your Artifactory credentials as the type Username with password, with the ID artifactory-credentials
 ![Add Credential](images/Add_Credentials.png)
