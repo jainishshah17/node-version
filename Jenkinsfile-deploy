@@ -19,10 +19,7 @@ node {
     }
 
     stage('Deploy chart') {
-        /* Finally, we'll deploy the image to k8s using helm chart.
-        Use install command to deploy chart for the first time.
-        Then use upgrade command to update to upgrade application with latest docker image. */
-        //sh './linux-amd64/helm install --name my-release --set image.repository=docker.artifactory/node-version chart/'
-        sh './linux-amd64/helm upgrade my-release --set image.repository=docker.artifactory/node-version chart/'
+        /* Finally, we'll deploy the image to k8s using helm chart. */
+        sh './linux-amd64/helm upgrade my-release --install chart/'
     }
 }
