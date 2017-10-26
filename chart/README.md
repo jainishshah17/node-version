@@ -52,6 +52,7 @@ The following tables lists the configurable parameters of the node-version chart
 | `image.repository`                 | Node-version image                  | `$ART_DOCKER_REPO/node-version:{tag}`                     |
 | `image.pullPolicy`                 | Image pull policy                   | `Always`                                                  |
 | `image.tag`                        | Tag of docker image                 | `latest`                                                  |
+| `image.secretName`                 | Credentials of Art docker repo      | `regsecret`                                               |
 | `service.type`                     | Kubernetes Service type             | `LoadBalancer`                                            |
 | `service.port`                     | Port to expose                      | `3000`                                                    |
 | `imageCredentials.registry`        | Artifactory docker registry         | `docker.artifactory`                                      |

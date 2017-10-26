@@ -42,3 +42,11 @@
 
 7.  Check your newly published docker image in Artifactory.
 ![Artifactory UI](images/Artifactory_UI.png)
+
+
+#### Steps to create Jenkins Pipeline to deploy docker image to kubernetes cluster using helm chart:
+
+1.  Create new Jenkins Pipeline Job.
+2.  Copy [Jenkinsfile](Jenkinsfile-deploy) to Pipeline Script.
+3.  To build it, press Build Now.
+![Build View](images/Deploy_View.png)
