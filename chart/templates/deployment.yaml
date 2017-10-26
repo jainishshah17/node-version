@@ -24,4 +24,8 @@ spec:
               containerPort: 3000
               protocol: TCP
       imagePullSecrets:
+        {{- if .Values.image.secretName }}
+        - name: {{ .Values.image.secretName }}
+        {{- else }}
         - name: {{ template "node-version.fullname" . }}-regsecret
+        {{- end -}}

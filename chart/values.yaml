@@ -6,14 +6,16 @@ replicaCount: 1
 restartPolicy: Never
 
 image:
-  repository: jfrogtraining-docker-dev.jfrog.io/node-version
+  repository: docker.artifactory/node-version
   tag: latest
+  secretName: regsecret
   pullPolicy: Always
 
-imageCredentials:
-  registry: docker.artifactory
-  username: admin
-  password: password
+#Uncomment if you want to generate docker credentials using helm
+#imageCredentials:
+#  registry: docker.artifactory
+#  username: admin
+#  password: password
 
 service:
   annotations: {}
