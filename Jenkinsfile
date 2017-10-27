@@ -47,7 +47,7 @@ node {
         /*
         Capture and publish build information to Artifactory
         */
-        buildInfo.env.capture = true
+        buildInfo.env.collect()
         rtServer.publishBuildInfo buildInfo
     }
 }
