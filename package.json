@@ -8,6 +8,10 @@
     "start": "node ./bin/www",
     "test": "node test/test.js"
   },
+  "main":"./bin/www",
+  "bin": {
+    "node-version": "./bin/www"
+  },
   "dependencies": {
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
