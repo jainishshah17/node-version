@@ -6,3 +6,8 @@ body {
 p {
   color: #43a047;
 }
+
+img {
+  height: 20%;
+  width: 20%;
+}
