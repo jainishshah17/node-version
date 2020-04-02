@@ -10,7 +10,7 @@ COPY . /usr/src/app
 # Install app dependencies
 RUN npm install
 
-VOLUME /usr/src/logs
+VOLUME /usr/src/app/logs
 
 EXPOSE 3000
 
