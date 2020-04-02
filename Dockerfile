@@ -10,6 +10,8 @@ COPY . /usr/src/app
 # Install app dependencies
 RUN npm install
 
+VOLUME /usr/src/logs
+
 EXPOSE 3000
 
 CMD [ "npm", "start" ]
